@@ -38,6 +38,27 @@ Em seguida, instale as dependencias do composer:
 ```bash
 composer install
 ```
+
+Antes de iniciar as migrations, é necessário configurar corretamente o arquivo ".env".
+Dentro do arquivo ".env.example", você verá algo assim:
+
+```
+DB_CONNECTION=sqlite
+# DB_HOST=127.0.0.1
+# DB_PORT=3306
+# DB_DATABASE=laravel
+# DB_USERNAME=root
+# DB_PASSWORD=
+```
+
+No seu ".env" gerado, descomente as linhas comentadas, troque "DB_CONNECTION=sqlite" por "DB_CONNECTION=mysql".
+Se estiverem comentadas, descomente:
+```
+DB_DATABASE=laravel # (o nome do banco de dados pode ser alterado se desejar)
+DB_USERNAME=root # (seu usuário do MySQL)
+DB_PASSWORD= # (sua senha do MySQL, ou deixe vazio se não tiver)
+```
+
 Depois, rode o comando:
 ```bash
 php artisan migrate
