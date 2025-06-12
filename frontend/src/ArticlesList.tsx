@@ -67,8 +67,8 @@ export default function ArticlesList() {
 
   if (error) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-zinc-950">
-        <p className="text-red-500 text-lg">{error}</p>
+      <div className="flex items-center justify-center min-h-screen text-zinc-950">
+        <p className="text-black text-3xl">Ops, a API está offline: {error}</p>
       </div>
     );
   }
