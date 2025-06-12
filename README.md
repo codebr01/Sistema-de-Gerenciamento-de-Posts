@@ -42,8 +42,7 @@ Depois, rode o comando:
 ```bash
 php artisan migrate
 ```
-PS: caso aparece uma mensagem de Yes ou No, digite Yes
-Por fim, inicie a API:
+PS: caso aparece uma mensagem de Yes ou No, digite Yes. Por fim, inicie a API:
 ```bash
 php artisan serve
 ```
